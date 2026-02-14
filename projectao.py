@@ -9,12 +9,12 @@ Original file is located at
 
 from google.colab import files
 
-# 📌 Ouvre une fenêtre pour sélectionner un fichier à téléverser
+#  Ouvre une fenêtre pour sélectionner un fichier à téléverser
 uploaded = files.upload()
 
-# 📌 Affiche les fichiers téléversés
+#  Affiche les fichiers téléversés
 for filename in uploaded.keys():
-    print(f"✅ Fichier téléversé : {filename}")
+    print(f" Fichier téléversé : {filename}")
 
 # Installation des dépendances (à exécuter une seule fois)
 !pip install transformers datasets evaluate --quiet
